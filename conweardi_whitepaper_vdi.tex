@@ -1,5 +1,13 @@
 \documentclass[sigchi]{acmart}
 
+\settopmatter{printacmref=false} % Removes citation information below abstract
+\pagestyle{plain} % removes running headers
+%\renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference information in first column - only seems to work when there is text put into the command which also puts text above the abstract
+
+\makeatletter
+\renewcommand\@formatdoi[1]{\ignorespaces}
+\makeatother
+
 \usepackage{booktabs} % For formal tables
 
 
@@ -16,17 +24,15 @@
 %\setcopyright{licensedothergov}
 
 % DOI
-%\acmDOI{10.475/123_4}
+\acmDOI{}
 
 % ISBN
-%\acmISBN{123-4567-24-567/08/06}
+\acmISBN{}
 
 %Conference
-%\acmConference[WOODSTOCK'97]{ACM Woodstock conference}{July 1997}{El
-% Paso, Texas USA}
-%\acmYear{1997}
+\acmConference[International VDI Conference - Smart Construction Equipment]{}{2018}{}
+\acmYear{WHITE PAPER}
 %\copyrightyear{2016}
-
 %\acmPrice{15.00}
 
 
